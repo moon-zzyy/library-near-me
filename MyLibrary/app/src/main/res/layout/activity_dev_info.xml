@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DevInfoActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarDevInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/myToolbar"
+            android:background="?attr/colorPrimary"
+            android:minHeight="?attr/actionBarSize" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/scdream5"
+            android:textSize="24sp"
+            android:textColor="@color/textColor"
+            android:text="개발자:"
+            />
+        <TextView
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/scdream4"
+            android:textSize="20sp"
+            android:textColor="@color/textColor"
+            android:text="201814119 문지영"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:gravity="center"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/scdream5"
+            android:textSize="24sp"
+            android:textColor="@color/textColor"
+            android:text="개발기간:"
+            />
+        <TextView
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/scdream4"
+            android:textSize="20sp"
+            android:textColor="@color/textColor"
+            android:text="2020년 05 ~ 06월"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:gravity="center"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/scdream5"
+            android:textSize="24sp"
+            android:textColor="@color/textColor"
+            android:text="지도교수:"
+            />
+        <TextView
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/scdream4"
+            android:textSize="20sp"
+            android:textColor="@color/textColor"
+            android:text="지정희 교수님"/>
+    </LinearLayout>
+
+    <TextView
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/scdream4"
+        android:textColor="@color/textColor"
+        android:text="본 앱은 개발자 동생의 이미지와 함께합니다."/>
+</LinearLayout>

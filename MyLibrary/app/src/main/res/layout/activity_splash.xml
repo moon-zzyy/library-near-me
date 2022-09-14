@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SplashActivity"
+    android:background="@color/toolbarColor"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="bottom|center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:src="@drawable/iconf"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:layout_marginBottom="5dp"
+            android:textSize="40sp"
+            android:fontFamily="@font/scdream6"
+            android:textColor="@color/textDarkColor"
+            android:text="@string/app_name"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fontFamily="@font/scdream5"
+        android:gravity="top|center"
+        android:text="당신을 위한 도서관"
+        android:textColor="@color/textLightColor"
+        android:textSize="20sp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/scdream5"
+        android:gravity="bottom|center"
+        android:text="초기 실행 시 시간이 다소 걸릴 수 있습니다.\n잠시만 기다려 주세요."
+        android:textColor="@color/textLightColor"
+        android:textSize="20sp" />
+
+</LinearLayout>

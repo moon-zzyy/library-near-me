@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:title="검색">
+        <menu>
+            <group android:id="@+id/menuMain">
+
+                <item
+                    android:id="@+id/findByName"
+                    android:icon="@drawable/ic_search_black_24dp"
+                    android:title="이름으로 검색" />
+                <item
+                    android:id="@+id/findByState"
+                    android:icon="@drawable/ic_search_black_24dp"
+                    android:title="지역으로 검색" />
+                <item
+                    android:id="@+id/findByLoc"
+                    android:icon="@drawable/ic_search_black_24dp"
+                    android:title="현재위치로 검색" />
+
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="추가정보">
+        <menu>
+            <group   android:id="@+id/menuSub">
+
+                <item
+                    android:id="@+id/appInfo"
+                    android:icon="@drawable/ic_folder_open_black_24dp"
+                    android:title="앱 정보" />
+                <item
+                    android:id="@+id/developerInfo"
+                    android:icon="@drawable/ic_person_outline_black_24dp"
+                    android:title="개발자 정보" />
+            </group>
+        </menu>
+    </item>
+
+</menu>

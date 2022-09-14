@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">우리 동네 도서관</string>
+    <string name="open">OPEN</string>
+    <string name="closed">CLOSED</string>
+
+
+    <string name="myInfo">"""201814119 문지영"""</string>
+
+
+</resources>

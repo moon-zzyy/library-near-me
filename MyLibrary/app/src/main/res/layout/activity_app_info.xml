@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AppInfoActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarAppInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/myToolbar"
+            android:background="?attr/colorPrimary"
+            android:minHeight="?attr/actionBarSize" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/scdream5"
+        android:textSize="24sp"
+        android:text="도서관 정보"        />
+    <LinearLayout
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/scdream5"
+            android:text="제공기관:"    />
+        <TextView
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/scdream4"
+            android:text="공공데이터활용지원센터"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/scdream5"
+            android:text="파일명:"    />
+        <TextView
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/scdream4"
+            android:text="전국도서관표준데이터"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/scdream5"
+            android:text="파일유형:"    />
+        <TextView
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/scdream4"
+            android:text="JSON"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="10dp"
+        android:background="#bdbdbd" />
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/scdream5"
+        android:textSize="24sp"
+        android:text="지도 정보"/>
+
+    <LinearLayout
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/scdream5"
+            android:text="제공기관:"    />
+        <TextView
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/scdream4"
+            android:text="카카오 지도"/>
+    </LinearLayout>
+    <LinearLayout
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/scdream5"
+            android:text="플랫폼:"    />
+        <TextView
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/scdream4"
+            android:text="안드로이드"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="10dp"
+        android:background="#bdbdbd" />
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/scdream5"
+        android:textSize="24sp"
+        android:text="폰트 정보"/>
+    <LinearLayout
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/scdream5"
+            android:text="제공기관:"    />
+        <TextView
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/scdream4"
+            android:text="S-Core"/>
+    </LinearLayout>
+    <LinearLayout
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/scdream5"
+            android:text="폰트명:"    />
+        <TextView
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/scdream4"
+            android:text="에스코어 드림 (S-Core Dream)"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="10dp"
+        android:background="#bdbdbd" />
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/scdream5"
+        android:textSize="24sp"
+        android:text="앱 권한"/>
+    <LinearLayout
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/scdream5"
+            android:text="유형:"    />
+        <TextView
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/scdream4"
+            android:text="사용자 위치"/>
+    </LinearLayout>
+    <LinearLayout
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/scdream5"
+            android:text="유형:"    />
+        <TextView
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/scdream4"
+            android:text="전화걸기"/>
+    </LinearLayout>
+</LinearLayout>

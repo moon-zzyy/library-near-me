@@ -1,0 +1,22 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/toolbarColor</item>
+        <item name="colorPrimaryDark">@color/toolbarColor</item>
+        <item name="colorAccent">#30E479</item>
+        <item name="titleTextColor">@color/textDarkColor</item>
+        <item name="subtitleTextColor">@color/textLightColor</item>
+    </style>
+
+    <style name="myToolbar" >
+        <item name="fontFamily">@font/scdream5</item>
+
+    </style>
+
+    <style name="myMenu">
+        <item name="fontFamily">@font/scdream4</item>
+    </style>
+
+</resources>

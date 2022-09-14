@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InfoActivity"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:theme="@style/myToolbar"
+        android:minHeight="?attr/actionBarSize" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+        <LinearLayout
+            android:layout_marginBottom="7dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:paddingRight="4dp"
+                android:paddingLeft="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_location_on_black_24dp" />
+
+            <TextView
+                android:id="@+id/addressi"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/scdream4"
+                android:textSize="16sp"
+                android:text="도로명주소" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginBottom="7dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:paddingRight="4dp"
+                android:paddingLeft="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_phone_black_24dp" />
+
+            <TextView
+                android:id="@+id/teli"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/scdream4"
+                android:autoLink="phone"
+                android:textSize="16sp"
+                android:text="전화번호" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginBottom="7dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:paddingRight="4dp"
+                android:paddingLeft="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_language_black_24dp" />
+
+            <TextView
+                android:id="@+id/websitei"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/scdream4"
+                android:autoLink="web"
+                android:textSize="16sp"
+                android:text="홈페이지" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginBottom="7dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:paddingRight="4dp"
+                android:paddingLeft="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_do_not_disturb_black_24dp" />
+
+            <TextView
+                android:id="@+id/holidayi"
+                android:layout_width="374dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/scdream4"
+                android:textSize="16sp"
+                android:text="휴관일" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <View
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="#bdbdbd" />
+    <LinearLayout
+        android:padding="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+        <LinearLayout
+            android:layout_marginBottom="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <ImageView
+                android:paddingRight="5dp"
+                android:paddingLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_schedule_black_24dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="이용시간"
+                android:fontFamily="@font/scdream5"
+                android:textSize="24sp"  />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/scdream5"
+                android:text="평일" />
+
+            <TextView
+                android:id="@+id/weekdaysi"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:fontFamily="@font/scdream4"
+                android:text="평일" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/scdream5"
+                android:text="토요일" />
+
+            <TextView
+                android:id="@+id/saturdayi"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:text="토요일" />
+        </LinearLayout>
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/scdream5"
+            android:text="공휴일" />
+
+        <TextView
+            android:id="@+id/holi"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:text="공휴일" />
+    </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="#bdbdbd" />
+    <LinearLayout
+        android:padding="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_marginBottom="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <ImageView
+                android:paddingRight="5dp"
+                android:paddingLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_format_list_numbered_black_24dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="자료수"
+                android:fontFamily="@font/scdream5"
+                android:textSize="24sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/scdream5"
+                android:text="도서" />
+
+            <TextView
+                android:id="@+id/booksi"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:text="도서" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/scdream5"
+                android:text="연속간행물" />
+
+            <TextView
+                android:id="@+id/books2i"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:text="연속간행물" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/scdream5"
+                android:text="비도서" />
+
+            <TextView
+                android:id="@+id/books3i"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:text="비도서" />
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="#bdbdbd" />
+    <LinearLayout
+        android:padding="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+        <LinearLayout
+            android:layout_marginBottom="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <ImageView
+                android:paddingRight="5dp"
+                android:paddingLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_book_black_24dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="대출가능, 좌석수"
+            android:fontFamily="@font/scdream5"
+            android:textSize="24sp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/scdream5"
+                android:text="대출가능권수" />
+
+            <TextView
+                android:id="@+id/borrowNumi"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text="대출가능권수" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/scdream5"
+                android:text="대출가능일수" />
+
+            <TextView
+                android:id="@+id/borrowDayi"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text="대출가능일수" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/scdream5"
+                android:text="열람좌석수" />
+
+            <TextView
+                android:id="@+id/seati"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text="열람좌석수" />
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="#bdbdbd" />
+
+    <LinearLayout
+        android:padding="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_marginBottom="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <ImageView
+                android:paddingRight="5dp"
+                android:paddingLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_map_black_24dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="위치"
+                android:fontFamily="@font/scdream5"
+                android:textSize="24sp"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/map_view_info"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</LinearLayout>
